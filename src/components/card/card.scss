@@ -1,0 +1,91 @@
+:root{
+    --PrimaryColor : hsl(199, 100%, 33%);
+    --SecondaryColor : hsl(187, 85%, 43%);
+    --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+    --whiteColor : hsl(0, 0%, 100%);
+     --blackColor : hsl(201, 33%, 16%);
+     --textColor: hsl(240, 4%, 36%);
+     --whiteColorDeam : hsl(0, 0%, 93%);
+     --grayText : rgb(190, 190, 190);
+     --inputColor : rgb(239, 239, 239);
+     --bodyColor : rgb(240, 240, 246);
+     --cardBG: rgb(225, 225,225);
+     --cardHover: rgb(255, 255, 235);
+  
+  }
+
+
+
+.cardSection{
+    width: 100%;
+    margin: 0px;
+        .itemCont{
+            height: auto;
+        .item{
+            border-radius: 10px;
+            align-items: center;
+            background: var(--cardBG);
+            box-shadow: 0 2px 4px rgb(140, 140, 141, 0.549);
+            overflow: hidden;
+           
+            &:hover{
+                background: var(--cardHover);
+               box-shadow: 1px 4px 4px rgba(85, 85, 114, 0.549);
+               transition: 0.3s ease;
+            }
+            
+            .image{
+                height: 300px;
+                width: 100%;
+                overflow: hidden;
+                transition: 0.5s;
+               img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: 0.3s ease;
+               }
+               &:hover{
+                transform: scale(1.1);
+               }
+            }
+
+            .cardInfocont{
+                width: 100%;
+                .info{
+                    padding: 20px 20px 20px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+                hr{
+                    border: none;
+                    height: 0.5px;
+                    background-color: var(--grayText);
+                            
+                }
+                .cardTitle{
+                    h3{
+                        font-size: 20px;
+                        color: var(--blackColor);
+                        text-transform: capitalize;
+                    }  
+                }
+                .cardDesc{
+                    p{
+                        // text-align: justify;
+                        font-size: 14px;
+                        color: var(--textColor);
+                    }
+                }
+
+            }
+               
+            }
+        }
+    }
+    }
+
+
+
+
+

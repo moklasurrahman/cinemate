@@ -1,38 +1,44 @@
-.App {
-  text-align: center;
+
+:root{
+  --PrimaryColor : hsl(199, 100%, 33%);
+  --SecondaryColor : hsl(187, 85%, 43%);
+  --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+  --whiteColor : hsl(0, 0%, 100%);
+   --blackColor : hsl(201, 33%, 16%);
+   --textColor: hsl(240, 4%, 36%);
+   --whiteColorDeam : hsl(0, 0%, 93%);
+   --grayText : rgb(190, 190, 190);
+   --inputColor : rgb(239, 239, 239);
+   --bodyColor : rgb(240, 240, 246);
+   --cardBG: rgb(225, 225,225);
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app{
+  /* background-color: black; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+main{
+  max-width: 1280px;
+  margin: auto;
+  min-height: 90vh;
+  padding: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+
+.loader {
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+.dark{
+  background: rgb(15, 13, 29);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

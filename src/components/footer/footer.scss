@@ -1,0 +1,78 @@
+:root{
+    --PrimaryColor : hsl(199, 100%, 33%);
+    --SecondaryColor : hsl(187, 85%, 43%);
+    --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+    --whiteColor : hsl(0, 0%, 100%);
+     --blackColor : hsl(201, 33%, 16%);
+     --textColor: hsl(240, 4%, 36%);
+     --whiteColorDeam : hsl(0, 0%, 93%);
+     --grayText : rgb(190, 190, 190);
+     --inputColor : rgb(239, 239, 239);
+     --bodyColor : rgb(240, 240, 246);
+     --cardBG: rgb(225, 225,225);
+  
+  }
+
+
+.footerContainer{
+    .footer{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        // width: 100%;
+        // height: max-content;
+        align-items: center;
+        column-gap: 100px;
+        justify-content: center;
+        background-color: var(--whiteColorDeam);
+        padding: 5px;
+        
+        .left{
+            font-size: 13px;
+            font-weight: 300;
+            color: var(--textColor);
+        }
+        .right{
+            .footList{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+               .link{
+                font-size: 13px;
+                color: var(--textColor);
+                font-weight: 300;
+                text-decoration: none;
+                text-transform: capitalize;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                gap: 5px;
+
+                .icon{
+                    font-size: 20px;
+                    color: var(--textColor);
+                }
+
+                &:hover{
+                    color: var(--PrimaryColor);
+                }
+
+               } 
+            }
+        }
+    }
+}
+
+
+
+@media screen and (min-width: 769px){
+    .footerContainer{
+        // width: 100%;
+        // position: absolute;
+        // left: 0;
+        // bottom: 0;
+        // position: fixed;
+        // .footer{          
+        // }
+    }
+}

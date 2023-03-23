@@ -1,0 +1,185 @@
+:root{
+    --PrimaryColor : hsl(199, 100%, 33%);
+    --SecondaryColor : hsl(187, 85%, 43%);
+    --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+    --whiteColor : hsl(0, 0%, 100%);
+     --blackColor : hsl(201, 33%, 16%);
+     --textColor: hsl(240, 4%, 36%);
+     --whiteColorDeam : hsl(0, 0%, 93%);
+     --grayText : rgb(190, 190, 190);
+     --inputColor : rgb(239, 239, 239);
+     --bodyColor : rgb(240, 240, 246);
+     --cardBG: rgb(225, 225,225);
+  
+  }
+
+
+.movieDetail{
+    .left{
+        .img{
+            img{
+                width: 300px;
+                object-fit: cover;
+                display: flex;
+                margin: auto;
+                padding: 10px;
+            }
+        }
+    }
+
+    .right{
+        padding: 15px;
+        display: flex;
+        .allitem{
+            margin-bottom: 10px;
+            h1{
+                color: var(--textColor);
+                font-size: 25px;
+                margin-top: 10px;
+            }
+            p{
+                font-size: 12px;
+                font-weight: 500;
+                color: var(--textColor);
+                margin-top: 10px;
+            }
+            .btn{
+                margin-top: 20px;
+                display: flex;
+                align-items: center;
+                gap: 15px;
+               
+                span{
+                    padding: 5px;
+                    border: 1px solid var(--grayText);
+                    font-size: 10px;
+                    color: var(--textColor);
+                }
+            }
+            .moreinfo{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                margin-top: 15px;
+                p{
+                    display: flex;
+                    align-items: center;
+                    gap: 2px;
+                    .icon{
+                        font-size: 15px;
+                        color: rgb(248, 248, 15);
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 769px){
+    .movieDetail{
+        display: grid;
+        grid-template-columns: auto auto;
+        align-items: flex-start;
+        .left{
+            .img{
+                img{
+                    width: 300px;
+                    
+                }
+            }
+        }
+    
+    
+        .right{
+            padding: 0px 10px;
+            display: inherit;
+            .allitem{
+                p{
+                    font-size: 15px;
+
+                }
+                .btn{
+                    gap: 20px;
+                   
+                    span{
+                        padding: 10px;
+                        font-size: 15px;
+                    }
+                }
+                .moreinfo{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+                    margin-top: 15px;
+                    p{
+                        display: flex;
+                        align-items: center;
+                        gap: 2px;
+                        .icon{
+                            font-size: 20px;
+                            color: rgb(248, 248, 15);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+
+@media screen and (min-width: 960px) {
+    .movieDetail{
+        display: grid;
+        grid-template-columns: auto auto;
+        align-items: flex-start;
+        width: 80%;
+        margin: 0 auto;
+        .left{
+            .img{
+                img{
+                    width: 400px;
+                   
+                }
+            }
+        }
+    
+    
+        .right{
+            padding: 0px 10px;
+            display: inherit;
+            .allitem{
+                p{
+                    font-size: 15px;
+
+                }
+                .btn{
+                    gap: 20px;
+                   
+                    span{
+                        padding: 10px;
+                        font-size: 15px;
+                    }
+                }
+                .moreinfo{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+                    margin-top: 15px;
+                    p{
+                        display: flex;
+                        align-items: center;
+                        gap: 2px;
+                        .icon{
+                            font-size: 20px;
+                            color: rgb(248, 248, 15);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+

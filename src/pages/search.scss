@@ -1,0 +1,33 @@
+.movie{
+    .serchCard{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px 0px;
+
+    }
+}
+
+
+@media screen and (min-width: 769px){
+    .movie{
+        // margin-bottom: 60px;
+        .serchCard{
+            display: grid;
+            grid-template-columns: auto auto;
+    
+        }
+    }
+}
+
+@media screen and (min-width: 960px) {
+
+    .movie{
+        .serchCard{
+            display: grid;
+            grid-template-columns: auto auto auto;
+    
+        }
+    }
+}
+

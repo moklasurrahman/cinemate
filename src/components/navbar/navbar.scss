@@ -1,0 +1,210 @@
+:root{
+    --PrimaryColor : hsl(199, 100%, 33%);
+    --SecondaryColor : hsl(187, 85%, 43%);
+    --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+    --whiteColor : hsl(0, 0%, 100%);
+     --blackColor : hsl(201, 33%, 16%);
+     --textColor: hsl(240, 4%, 36%);
+     --whiteColorDeam : hsl(0, 0%, 93%);
+     --grayText : rgb(190, 190, 190);
+     --inputColor : rgb(239, 239, 239);
+     --bodyColor : rgb(240, 240, 246);
+     --cardBG: rgb(225, 225,225);
+  
+  }
+
+
+
+.navabrs{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+    
+    .navbar{
+        position: relative;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        // height: max-content;
+        padding: 10px;
+        justify-content: space-between;
+      .logo{
+        font-size: 20px;
+        color: var(--textColor);
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        .icon{
+            font-size: 25px;
+            color: var(--PrimaryColor);
+            margin-right: 5px;
+        }
+
+      } 
+      
+      .showlist{ //for mobil tggle
+        top: 165px !important;
+    }
+      .navitem{
+        position: absolute;
+        top: -155px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        // height: max-content;
+        padding: 1rem 0px;
+        gap: 2rem;
+        background-color:var(--PrimaryColor);
+        border-radius: 5px;
+        z-index: 1000;
+        // transform: translateX(-100px);
+        transition: 0.5s ease-in-out;
+        .link{
+                color: var(--whiteColor);
+                font-size: 0.9rem;
+                text-transform: capitalize;
+                font-weight: 300;
+                cursor: pointer;
+                // margin: 20px 0px;
+                font-size: 15px;
+                font-weight: 300;
+                height: 100%;
+                list-style-type: none;
+                text-transform: capitalize;
+                display: flex;
+                flex-direction: column;
+                column-gap: 2rem;
+                align-items: center;
+                justify-content: center;
+            }
+      .link-active{
+        border-bottom: 1px solid var(--whiteColor);
+        color: var(--whiteColorDeam);
+      }
+        
+      }
+
+
+
+      
+
+      .search{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        .Nighticon{
+            font-size: 25px;
+            background-color: rgba(211, 211, 211, 0.144);
+            padding: 5px;
+            border-radius: 5px;
+            color: var(--textColor);
+            cursor: pointer;
+        }
+        .icon{
+            font-size: 25px;
+            color: var(--textColor);
+        }
+
+        .input[type="search"]{
+            position: absolute;
+            top: 10;
+            left: -800px;
+            height: 30px;
+            padding: 5px;
+            color: var(--whiteColor);
+            width: 55%;
+            background: var(--gradientColor);
+            transition: 0.5s ease-in-out;
+            &:focus{
+                outline: none;
+            }
+           
+
+        }
+        .inputshow{
+            left: 0px !important;
+        }
+        .manubtn{
+            .icon{
+              font-size: 25px;
+            }
+          }
+        }
+    }
+
+}
+
+
+@media screen and (min-width: 769px){
+
+  .navabrs{ 
+    .navbar{
+        justify-content: space-between;
+      .logo{
+        flex: 1;
+      } 
+
+      .navitem{
+        flex: 3;
+        position: initial;
+        transform: translate(0px);
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        background: none;
+       
+        .link{
+          color: var(--textColor);
+          
+        }
+      
+      .link-active{
+        border-bottom: 1px solid var(--PrimaryColor);
+        color: var(--SecondaryColor);
+      }
+        
+      }
+      
+
+      .search{
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        .icon{
+
+          display: none;
+        }
+
+        .input[type="search"]{
+            position: inherit;
+            width: 100%;
+            background: var(--gradientColor);
+      
+            &:focus{
+                outline: none;
+            }
+           
+
+        }
+        .inputshow{
+            left: 0px !important;
+        }
+        .manubtn{
+          display: none;
+            // .icon{}
+          }
+        }
+    }
+
+}
+
+
+}

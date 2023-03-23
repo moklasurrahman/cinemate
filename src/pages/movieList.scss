@@ -1,0 +1,57 @@
+:root{
+    --PrimaryColor : hsl(199, 100%, 33%);
+    --SecondaryColor : hsl(187, 85%, 43%);
+    --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+    --whiteColor : hsl(0, 0%, 100%);
+     --blackColor : hsl(201, 33%, 16%);
+     --textColor: hsl(240, 4%, 36%);
+     --whiteColorDeam : hsl(0, 0%, 93%);
+     --grayText : rgb(190, 190, 190);
+     --inputColor : rgb(239, 239, 239);
+     --bodyColor : rgb(240, 240, 246);
+     --cardBG: rgb(225, 225,225);
+     --cardHover: rgb(255, 255, 235);
+  
+  }
+
+
+.movies{
+    .toptitle{
+
+        color: var(--textColor);
+        margin: 1rem 0 1rem 0rem;
+        z-index: 2;
+        width: auto;
+        text-transform: uppercase;
+    }
+
+    .movie{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+    }
+}
+
+@media screen and (min-width: 769px){
+    .movies{
+        // margin-bottom: 60px;
+        .movie{
+            display: grid;
+            grid-template-columns: auto auto;
+    
+        }
+    }
+}
+
+@media screen and (min-width: 960px) {
+
+    .movies{
+        .movie{
+            display: grid;
+            grid-template-columns: auto auto auto;
+    
+        }
+    }
+}
+
